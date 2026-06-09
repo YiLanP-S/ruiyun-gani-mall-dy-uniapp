@@ -1,0 +1,301 @@
+{
+  "easycom": {
+    "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue",
+    "^my-(.*)": "@/components/myComponents/my-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "简一到家"
+      }
+    },
+    {
+      "path": "pages/uesr/index",
+      "style": {
+        "navigationBarTitleText": "简一到家",
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#ffffff"
+      }
+    },
+    {
+      "path": "pages/orderList/index",
+      "style": {
+        "navigationBarTitleText": "我的订单"
+      }
+    },
+
+    {
+      "path": "pages/uesr/set",
+      "style": {
+        "navigationBarTitleText": "修改用户信息"
+      }
+    },
+    {
+      "path": "pages/uesr/invite",
+      "style": {
+        "navigationBarTitleText": "邀请用户下单"
+      }
+    },
+    {
+      "path": "pages/uesr/coupon",
+      "style": {
+        "navigationBarTitleText": "优惠券列表"
+      }
+    },
+    {
+      "path": "pages/uesr/address/addresslist",
+      "style": {
+        "navigationBarTitleText": "地址列表"
+      }
+    },
+    {
+      "path": "pages/uesr/address/editaddress",
+      "style": {
+        "navigationBarTitleText": "新增地址"
+      }
+    },
+    {
+      "path": "pages/uesr/address/update",
+      "style": {
+        "navigationBarTitleText": "编辑地址"
+      }
+    },
+    {
+      "path": "pages/singlePage/singlePage",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/team/team",
+      "style": {
+        "navigationBarTitleText": "我的团队"
+      }
+    },
+    {
+      "path": "pages/classify/index",
+      "style": {
+        "navigationBarTitleText": "品类"
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "style": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/reservation/index",
+      "style": {
+        "navigationBarTitleText": "预约"
+      }
+    },
+    {
+      "path": "pages/discovery/discovery",
+      "style": {
+        "navigationBarTitleText": "案例"
+      }
+    },
+    {
+      "path": "pages/discovery/case",
+      "style": {
+        "navigationBarTitleText": "项目案例"
+      }
+    },
+    {
+      "path": "pages/serviceProviders/index",
+      "style": {
+        "navigationBarTitleText": "服务商列表"
+      }
+    },
+    {
+      "path": "pages/serviceQualification/index",
+      "style": {
+        "navigationBarTitleText": "服务资质"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/order",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "usingComponents": {
+              "pay-button-sdk": "tta5a3d31e3aecfb9b11://pay-button"
+            }
+          }
+        },
+
+        {
+          "path": "afterSales/apply",
+          "style": {
+            "navigationBarTitleText": "申请售后",
+            "usingComponents": {
+              "pay-button-sdk": "tta5a3d31e3aecfb9b11://pay-button"
+            }
+          }
+        },
+        {
+          "path": "afterSales/list",
+          "style": {
+            "navigationBarTitleText": "售后订单"
+          }
+        },
+        {
+          "path": "afterSales/detail",
+          "style": {
+            "navigationBarTitleText": "售后详情"
+          }
+        },
+        {
+          "path": "quality/quality",
+          "style": {
+            "navigationBarTitleText": "质保凭证"
+          }
+        },
+        {
+          "path": "constructionDetails",
+          "style": {
+            "navigationBarTitleText": "施工详情"
+          }
+        },
+        {
+          "path": "comment/add",
+          "style": {
+            "navigationBarTitleText": "服务评价"
+          }
+        },
+        {
+          "path": "distributionList",
+          "style": {
+            "navigationBarTitleText": "分销订单"
+          }
+        },
+        {
+          "path": "distributionUsers",
+          "style": {
+            "navigationBarTitleText": "分销用户"
+          }
+        },
+        {
+          "path": "distributionDetail",
+          "style": {
+            "navigationBarTitleText": "分销详情"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/withdraw",
+      "pages": [
+        {
+          "path": "commission",
+          "style": {
+            "navigationBarTitleText": "收支明细"
+          }
+        },
+        {
+          "path": "withdraw",
+          "style": {
+            "navigationBarTitleText": "申请提现"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/goods",
+      "pages": [
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "详情介绍"
+          }
+        },
+        {
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "订单确认"
+          }
+        },
+        {
+          "path": "comment/list",
+          "style": {
+            "navigationBarTitleText": "评价列表"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "搜索"
+          }
+        },
+        {
+          "path": "confirm",
+          "style": {
+            "navigationBarTitleText": "确认订单"
+          }
+        },
+        {
+          "path": "reservation",
+          "style": {
+            "navigationBarTitleText": "预约填写"
+          }
+        },
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "商品列表",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/brief",
+      "pages": [{}]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "简一膜法",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#949494",
+    "selectedColor": "#0059FF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orderList/index",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/uesr/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "condition": {
+    //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
+}
