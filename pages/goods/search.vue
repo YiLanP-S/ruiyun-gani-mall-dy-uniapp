@@ -269,7 +269,7 @@
 		margin: 12rpx 15rpx 15rpx 10rpx;
 		border-radius: 10rpx;
 	}
-	/deep/ .tn-btn-class{
+	::v-deep  .tn-btn-class{
 		white-space: nowrap;
 	}
 	.a-0{

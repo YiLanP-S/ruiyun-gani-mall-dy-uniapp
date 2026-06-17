@@ -228,16 +228,16 @@ export default {
   padding: 20rpx 30rpx;
 }
 
-/deep/ .tn-button button {
+::v-deep  .tn-button button {
   background: linear-gradient(130.69deg, #0059ff 0%, #004ad4 100%);
   // box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;
 }
-/deep/ .tn-icon-close-fill {
+::v-deep  .tn-icon-close-fill {
   font-size: 40rpx !important;
   color: $tn-font-title-color !important;
 }
 /* 底部悬浮按钮 end*/
-/deep/ .time-line-item__content__time {
+::v-deep  .time-line-item__content__time {
   color: #a29e9e;
   font-size: 24rpx;
   margin-top: 10rpx;
@@ -250,7 +250,7 @@ export default {
   border-radius: 16rpx;
   background-color: $tn-bg1-color;
 }
-.e-3 /deep/ .tn-image-upload__item {
+.e-3 ::v-deep  .tn-image-upload__item {
   background-color: transparent !important;
   border-radius: 16rpx;
   border: 1rpx dashed #7a8499;

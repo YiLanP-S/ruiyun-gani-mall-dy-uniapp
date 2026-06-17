@@ -104,7 +104,7 @@ export default {
 	}
   }
 }
-  /deep/ .tn-icon-close-fill{
+  ::v-deep  .tn-icon-close-fill{
   	font-size: 36rpx !important;
   	color: $tn-font-title-color !important;
   }

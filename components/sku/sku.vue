@@ -284,7 +284,7 @@ export default {
 .tn-footerfixed {
   width: 100%;
   margin-top: 30rpx;
-  margin-bottom: calc(env(safe-area-inset-bottom)- 20rpx);
+  margin-bottom: calc(env(safe-area-inset-bottom) - 20rpx);
   z-index: 1024;
   box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0);
 }

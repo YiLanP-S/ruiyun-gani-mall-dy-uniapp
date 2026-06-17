@@ -85,7 +85,7 @@
 
 <script>
   import template_page_mixin from '@/libs/mixin/template_page_mixin.js'
-  import mpHtml from '@/uni_modules/mp-html/dist/uni-app/components/mp-html/mp-html';
+  import mpHtml from 'mp-html/dist/uni-app/components/mp-html/mp-html.vue';
   export default {
 	components: { mpHtml},
     name: 'TemplateNews',

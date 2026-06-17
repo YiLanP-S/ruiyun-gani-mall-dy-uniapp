@@ -536,10 +536,10 @@ export default {
 .p-5 text {
   color: #00091a;
 }
-/deep/ .tn-checkbox__label {
+::v-deep  .tn-checkbox__label {
   margin-right: 10rpx !important;
 }
-/deep/ .tn-button2 button {
+::v-deep  .tn-button2 button {
   margin-top: 30rpx;
   background: white !important;
   box-shadow: none;

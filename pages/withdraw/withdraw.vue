@@ -247,7 +247,7 @@
 	.h-11{
 		color: $tn-theme-color;
 	}
-	/deep/ .tn-button button{
+	::v-deep  .tn-button button{
 		margin-top: 30rpx;
 		background: linear-gradient(130.69deg, #0059FF 0%, #004AD4 100%);
 		// box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;

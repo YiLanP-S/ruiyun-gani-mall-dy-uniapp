@@ -666,16 +666,16 @@ export default {
   overflow: hidden;
 }
 
-/deep/ .tn-tabs-class {
+::v-deep  .tn-tabs-class {
   background-color: transparent !important;
 }
 
-/deep/ .tn-bg-white {
+::v-deep  .tn-bg-white {
   background-color: transparent !important;
   padding: 0 30rpx;
 }
 
-/deep/ .tn-custom-nav-bar__bar {
+::v-deep  .tn-custom-nav-bar__bar {
   box-shadow: none !important;
 }
 
@@ -752,11 +752,11 @@ export default {
   padding: 13rpx !important;
 }
 
-/deep/ .tn-scroll-list-class {
+::v-deep  .tn-scroll-list-class {
   background-color: white !important;
 }
 
-/deep/ .tn-scroll-list__indicator {
+::v-deep  .tn-scroll-list__indicator {
   margin-top: 0 !important;
 }
 
@@ -803,21 +803,21 @@ export default {
   color: $tn-middle-color;
 }
 
-// /deep/ .tn-tabs__scroll-view__box{
+// ::v-deep  .tn-tabs__scroll-view__box{
 // 	padding: 0 30rpx;
 // }
-/deep/ .tn-tabs__scroll-view__item {
+::v-deep  .tn-tabs__scroll-view__item {
   flex: initial !important;
   margin-right: 53rpx;
   font-size: 32rpx !important;
   overflow: initial;
 }
 
-/deep/ .tn-tabs__scroll-view__box .tn-tabs__scroll-view__item:nth-last-child(2) {
+::v-deep  .tn-tabs__scroll-view__box .tn-tabs__scroll-view__item:nth-last-child(2) {
   margin-right: 0;
 }
 
-/deep/ .tn-tabs__scroll-view--flex {
+::v-deep  .tn-tabs__scroll-view--flex {
   justify-content: left !important;
 }
 
@@ -835,7 +835,7 @@ export default {
   right: 100rpx;
 }
 
-.clearBottom /deep/ .tn-scroll-list {
+.clearBottom ::v-deep  .tn-scroll-list {
   padding-bottom: 0;
 }
 
@@ -898,7 +898,7 @@ export default {
   // }
 }
 
-/deep/ .tn-tabs__scroll-view__item {
+::v-deep  .tn-tabs__scroll-view__item {
   color: #999;
   padding: 0rpx 24rpx;
   border-radius: 32rpx;

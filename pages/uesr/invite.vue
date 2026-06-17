@@ -467,32 +467,32 @@
 		align-items: center;
 		margin-bottom: 30rpx;
 	}
-	/deep/ .tn-button button{
+	::v-deep  .tn-button button{
 		margin-top: 100rpx;
 		background: linear-gradient(130.69deg, #0059FF 0%, #004AD4 100%);
 		// box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;
 	}
-	/deep/ .tn-button1 button{
+	::v-deep  .tn-button1 button{
 		margin-top: 50rpx;
 		background: transparent !important;
 		box-shadow: none;
 		color: $tn-middle-color !important;
 		border: 2rpx solid $tn-middle-color;
 	}
-	/deep/ .tn-button2 button{
+	::v-deep  .tn-button2 button{
 		margin-top: 50rpx;
 		background: white !important;
 		box-shadow: none;
 		color: $tn-font-title-color !important;
 		
 	}
-	/deep/ .tn-button3 button{
+	::v-deep  .tn-button3 button{
 		margin-top: 50rpx;
 		background: #00091A !important;
 		box-shadow: none;
 		
 	}
-	/deep/ .tn-icon-close-fill{
+	::v-deep  .tn-icon-close-fill{
 		font-size: 36rpx !important;
 		color: $tn-font-title-color !important;
 	}

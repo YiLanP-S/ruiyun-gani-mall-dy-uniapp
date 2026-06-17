@@ -33,28 +33,45 @@
 
 推荐工具：
 
-- HBuilderX
-- 微信开发者工具
-- Node.js
+- Visual Studio Code
+- Node.js（建议 16+）
+- tt-ide-cli（抖音小程序命令行）
+- 抖音开发者工具（预览/调试）
 
 微信小程序 AppID 配置在 `manifest.json` 的 `mp-weixin.appid`。
 
 ## 快速开始
 
-1. 使用 HBuilderX 打开本项目目录。
-2. 安装依赖：
+1. 安装依赖：
 
 ```bash
 npm install
 ```
 
-3. 在 HBuilderX 中选择：
+2. 生成抖音产物（必须是 `unpackage/dist/dev/mp-toutiao`）：
 
-```text
-运行 -> 运行到小程序模拟器 -> 微信开发者工具
+```bash
+# 1) 使用你的构建链路产出抖音产物（例如 uni-app 编译到 unpackage/dist/dev/mp-toutiao）
+# 2) 确认该目录内有 `app.json`、`project.config.json` 等抖音可识别文件
 ```
 
-4. 在微信开发者工具中重新编译并检查控制台。
+3. 通过 tt-ide-cli 打开与上传（抖音官方 CLI）：
+
+```bash
+# 登录（首次）
+npx -y tt-ide-cli login
+
+# 或使用 token（可在抖音控制台获取）
+npx -y tt-ide-cli set-app-config tt69331f8ef607e07c01 --token <token>
+
+# 打开项目（读取当前目录下 project.config.json）
+npx -y tt-ide-cli open .
+
+# 上传到开发者平台
+npx -y tt-ide-cli upload . --app-version 1.0.0 --app-changelog "debug build"
+```
+
+> 本项目为历史 uni-app 工程结构，文档已去掉 HBuilderX 的“打开/运行”步骤。当前打包链路按抖音官方文档要求：先产出 `unpackage/dist/dev/mp-toutiao`，再由 `tt-ide-cli` 处理预览与上传。
 
 ## 目录结构
 
@@ -114,7 +131,14 @@ https://img.tmsglm.com/...
 - 订单金额、优惠券、积分抵扣、退款金额建议使用 `big.js` 或后端返回值，避免浮点误差。
 - 商品规格展示应优先使用订单快照或 SKU 配置，不要回退成无意义的默认规格。
 - 订单、售后、评价、质保这类状态型页面，需要进入页面时主动刷新接口数据。
-- 微信开发者工具报错时，优先检查接口地址、页面路径、外部组件、资源域名和网络超时。
+- 抖音小程序报错时，优先检查接口地址、页面路径、外部组件、资源域名和网络超时。
+- 调试时如果发现接口仍是线上域名，先执行本地联调清理：
+
+```js
+uni.removeStorageSync('scrm_base_url')
+```
+
+再重新运行 `tt-ide-cli open / upload` 流程，确认开发者工具里请求地址返回 `127.0.0.1:48080`。
 
 ## 与后台/后端关系
 
@@ -135,11 +159,11 @@ https://img.tmsglm.com/...
 
 建议发布前完成：
 
-- 微信开发者工具重新编译无阻塞错误。
+- 抖音小程序命令行 `preview/open/upload` 能在产物目录上通过。
 - 代码质量检查：主包大小、未使用 JS、组件按需注入。
 - 首页、商品详情、购物车、下单、支付、订单详情、售后、评价链路走通。
 - 分享页图片为 CDN 可访问图片。
-- 线上接口域名、图片域名、上传域名在微信公众平台合法域名中。
+- 线上接口域名、图片域名、上传域名在抖音平台能力与安全域名配置中可访问。
 
 ## 备注
 

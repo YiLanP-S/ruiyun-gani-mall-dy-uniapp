@@ -757,16 +757,16 @@ export default {
   box-sizing: border-box;
 }
 
-/deep/ .tn-button button {
+::v-deep  .tn-button button {
   background: linear-gradient(130.69deg, #0059ff 0%, #004ad4 100%);
   // box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;
 }
-/deep/ .tn-icon-close-fill {
+::v-deep  .tn-icon-close-fill {
   font-size: 40rpx !important;
   color: $tn-font-title-color !important;
 }
 /* 底部悬浮按钮 end*/
-/deep/ .time-line-item__content__time {
+::v-deep  .time-line-item__content__time {
   color: #a29e9e;
   font-size: 24rpx;
   margin-top: 10rpx;
@@ -830,7 +830,7 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.c-14 /deep/ .tn-image-upload__item {
+.c-14 ::v-deep  .tn-image-upload__item {
   background-color: transparent !important;
   width: 315rpx !important;
   height: 212rpx !important;
@@ -838,7 +838,7 @@ export default {
   border-radius: 16rpx;
   border: 1rpx dashed $tn-border-solids-color;
 }
-.c1-14 /deep/ .tn-image-upload__add {
+.c1-14 ::v-deep  .tn-image-upload__add {
   background-image: url('https://www.tmsglm.com/statics/front_img.png');
   background-size: 100% 100%;
 }
@@ -1060,7 +1060,7 @@ export default {
 .c-60 {
   font-size: 24rpx;
 }
-.c-61 .tn-radio-group-class tn-radio:last-child /deep/ .tn-radio__label {
+.c-61 .tn-radio-group-class tn-radio:last-child ::v-deep  .tn-radio__label {
   margin-right: 0 !important;
 }
 .c-62 {

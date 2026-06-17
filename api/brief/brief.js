@@ -1,5 +1,5 @@
-import http from '@/util/request/index.js'
+import { post } from '@/api/scrm/http.js'
 
-export const addPartnerAPI = data => {
-  return http.postRequest('app-api/member/shop-business/create', data)
+export const addPartnerAPI = (data) => {
+  return post('app-api/member/shop-business/create', data)
 }

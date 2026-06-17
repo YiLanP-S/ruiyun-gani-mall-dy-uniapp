@@ -267,7 +267,7 @@ import SkuModal from '@/components/sku/sku.vue'
 import tuniaouiWxUserInfo from '@/uni_modules/tuniaoui-wx-user-info/components/tuniaoui-wx-user-info/tuniaoui-wx-user-info.vue'
 import template_page_mixin from '@/libs/mixin/template_page_mixin.js'
 import { timestampToTime } from '@/util/util.js'
-import mpHtml from '@/uni_modules/mp-html/dist/uni-app/components/mp-html/mp-html'
+import mpHtml from 'mp-html/dist/uni-app/components/mp-html/mp-html.vue'
 import store from '../../store/index.js'
 export default {
   components: { SkuModal, mpHtml, tuniaouiWxUserInfo },
@@ -1638,7 +1638,7 @@ export default {
   padding: 0 15rpx;
   position: relative;
 }
-.b-6 /deep/ .tn-countdown__separator {
+.b-6 ::v-deep  .tn-countdown__separator {
   font-size: 24rpx !important;
 }
 // .b-6::after{
@@ -1852,10 +1852,10 @@ export default {
 .b-48 {
   text-decoration: line-through;
 }
-/deep/ .tn-number-box-class .tn-number-box__btn__minus {
+::v-deep  .tn-number-box-class .tn-number-box__btn__minus {
   width: 80rpx;
 }
-/deep/ .tn-number-box-class .tn-number-box__btn__plus {
+::v-deep  .tn-number-box-class .tn-number-box__btn__plus {
   width: 80rpx;
 }
 
@@ -2031,11 +2031,11 @@ export default {
   background-color: white;
   border-radius: 8rpx;
 }
-/deep/ .tn-icon-close-fill {
+::v-deep  .tn-icon-close-fill {
   font-size: 40rpx !important;
   color: $tn-font-title-color !important;
 }
-/deep/ .tn-tips {
+::v-deep  .tn-tips {
   z-index: 99999999 !important;
 }
 

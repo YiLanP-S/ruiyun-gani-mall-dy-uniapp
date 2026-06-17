@@ -380,20 +380,20 @@
 			padding: 20rpx 30rpx;
 		}
 		
-		/deep/ .tn-button button{
+		::v-deep  .tn-button button{
 			background: linear-gradient(130.69deg, #0059FF 0%, #004AD4 100%);
 			// box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;
 		}
-		/deep/ .c1-39.tn-button button{
+		::v-deep  .c1-39.tn-button button{
 			background: white;
 			// box-shadow: 0rpx 4rpx 10rpx  #002D80,inset 6rpx 4rpx 10rpx  #002D80;
 		}
-		// /deep/ .tn-icon-close-fill{
+		// ::v-deep  .tn-icon-close-fill{
 		// 	font-size: 40rpx !important;
 		// 	color: $tn-font-title-color !important;
 		// }
 		/* 底部悬浮按钮 end*/
-		/deep/ .time-line-item__content__time{
+		::v-deep  .time-line-item__content__time{
 			color: #a29e9e;
 			font-size: 24rpx;
 			margin-top: 10rpx;
@@ -408,7 +408,7 @@
 		display: flex;
 		justify-content: center;
 	}
-	.c-14 /deep/ .tn-image-upload__item{
+	.c-14 ::v-deep  .tn-image-upload__item{
 		background-color: transparent !important;
 		width: 640rpx !important;
 		height: 400rpx !important;
@@ -707,7 +707,7 @@
 	.c-60{
 		font-size: 24rpx;
 	}
-	.c-61 .tn-radio-group-class tn-radio:last-child /deep/ .tn-radio__label{
+	.c-61 .tn-radio-group-class tn-radio:last-child ::v-deep  .tn-radio__label{
 		margin-right: 0 !important;
 	}
 	.c-62{

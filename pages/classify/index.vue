@@ -339,20 +339,20 @@
 		z-index: 999;
 		background-color: white;
 	}
-	/deep/ .tn-tabs-class{
+	::v-deep  .tn-tabs-class{
 		background-color: transparent !important;
 	}
-	/deep/ .tn-bg-white{
+	::v-deep  .tn-bg-white{
 		background-color: transparent !important;
 	}
-	/deep/ .tn-custom-nav-bar__bar{
+	::v-deep  .tn-custom-nav-bar__bar{
 		box-shadow: none !important;
 	}
-	/deep/ .tn-subsection__item{
+	::v-deep  .tn-subsection__item{
 		width: 150rpx;
 		height: 52rpx;
 	}
-	/deep/ .tn-subsection-class{
+	::v-deep  .tn-subsection-class{
 		// height: 52rpx !important;
 	}
 	.a-1{

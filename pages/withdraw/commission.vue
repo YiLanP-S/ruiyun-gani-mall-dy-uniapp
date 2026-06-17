@@ -358,14 +358,14 @@
 		margin-left: 10rpx;
 	}
 	/* 底部悬浮按钮 end*/
-	/deep/ .tn-tabs-class{
+	::v-deep  .tn-tabs-class{
 		background-color: transparent !important;
 	}
-	/deep/ .tn-tabs__scroll-view__item{
+	::v-deep  .tn-tabs__scroll-view__item{
 		flex: initial !important;
 		margin-right: 50rpx;
 	}
-	/deep/ .tn-tabs__scroll-view--flex{
+	::v-deep  .tn-tabs__scroll-view--flex{
 		justify-content: left !important;
 	}
 	.a-0{

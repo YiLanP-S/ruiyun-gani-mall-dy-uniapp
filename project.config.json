@@ -1,17 +1,23 @@
 {
-  "appid": "wx0d7bdbc536d92875",
+  "appid": "tt69331f8ef607e07c01",
+  "ttProjectType": "microapp",
   "compileType": "miniprogram",
+  "projectname": "ruiyun-gani-mall-dy-uniapp",
+  "miniprogramRoot": "unpackage/dist/dev/mp-toutiao",
   "libVersion": "3.12.1",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "coverView": true,
+    "urlCheck": false,
     "es6": true,
     "postcss": true,
     "minified": true,
     "enhance": true,
+    "autoCompile": true,
+    "mockUpdate": false,
+    "coverView": true,
     "showShadowRootInWxmlPanel": true,
     "packNpmRelationList": [],
     "babelSetting": {

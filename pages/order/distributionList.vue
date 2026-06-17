@@ -548,21 +548,21 @@
 		margin-left: 10rpx;
 		color: $tn-theme-color;
 	}
-	.j-11 /deep/ .tn-countdown__item__time{
+	.j-11 ::v-deep  .tn-countdown__item__time{
 		font-size: 24rpx !important;
 	}
-	.j-11 /deep/ .tn-countdown__separator{
+	.j-11 ::v-deep  .tn-countdown__separator{
 		font-size: 24rpx !important;
 		color: $tn-theme-color !important;
 	}
 	.j-12{
 		display: flex;
 	}
-	/deep/ .j-12 .tn-btn{
+	::v-deep  .j-12 .tn-btn{
 		margin-left: 20rpx;
 		width: 100% !important;
 	}
-	/deep/ .j-12 tn-button:first-child .tn-btn{
+	::v-deep  .j-12 tn-button:first-child .tn-btn{
 		margin-left: 0;
 	}
 	.j-13{

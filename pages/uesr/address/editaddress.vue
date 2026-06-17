@@ -345,7 +345,7 @@ textarea {
   padding-top: 15rpx;
   line-height: 40rpx;
 }
-.flexTop /deep/ .tn-form-item--left {
+.flexTop ::v-deep  .tn-form-item--left {
   display: initial;
 }
 </style>

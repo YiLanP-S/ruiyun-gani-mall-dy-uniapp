@@ -618,7 +618,7 @@
 	.g-11 .g1-11:last-child text{
 		display: none;
 	}
-	/deep/ .g-6 .tn-number-box__btn--disabled{
+	::v-deep  .g-6 .tn-number-box__btn--disabled{
 		background: #F5F7FC !important;
 	}
 	.g-12{
